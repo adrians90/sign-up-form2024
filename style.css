@@ -1,16 +1,91 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.bcg-img {
-    width: max(450px, 12em, 30%);
+body {
+    background-color: black;
+}
+
+.signup-page {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    
+}
+.row-1 {
+    width: 30vw;
     height: 100vh;
 }
-.bcg-logo {
-    width: max(100px, 5em, 15%);
-    height: 20vh;
+.row-1 {
+    background: url("./images/otto.jpeg");
+    background-repeat: no-repeat;
+    background-size: 30vw 100vh;
+}
+
+.logo-img {
+    width: 15vw;
+    height: 15vh;
     opacity: 0.5;
-    position: absolute;
-    bottom: 5px; left: 5px;
+    position: fixed;
+    left: 80px;
+    bottom: 5px;
+}
+
+.row-2 {
+    background-color: rgb(232, 227, 222);
+    height: 100vh;
+    width: 60vw;
+    padding: 10px;
+    
+    
+}
+
+.form-group {
+    
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-start;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+}
+
+.btn-create-acct {
+    margin-bottom: 10px;
+    background-color: rgb(200, 183, 164);
+    border: none;
+    color: whitesmoke;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-create-acct:hover {
+    background-color: rgb(230, 60, 60);
+    
+}
+.errors {
+    background-color: hsl(0, 100%, 80%);
+    border-radius: 0.5rem;
+    padding: 10px;
+    color: hsl(0, 50%, 20%);
+    margin-bottom: 1rem;
+}
+.errors {
+    display: none;
+}
+
+.errors.show {
+    display: block;
 }
