@@ -8,51 +8,55 @@
     <title>Sign-up form</title>
 </head>
 <body>
-    <div class="img-container">
-        <img src="./images/otto.jpeg" alt="photo of a cat named Otto" class="bcg-img">
-        <img src="./images/catlogo.png" alt="logo of a cat" class="bcg-logo">
+    <div class="signup-page">
+        <div class="row-1">
+            <div class="logo">
+                <img src="./images/catlogo.svg" alt="cat logo" class="logo-img">
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="description">
+                <span>Get in touch for our cat sitting services!</span><br>
+                <span>Sign up now to get started.</span>
+            </div><br>
+            <div class="form">
+                <form action="#" id="form-element">
+                    <div class="errors">
+                        <h3 class="error-title">Error</h3>
+                        <ul class="errors-list">
+                            
+                        </ul>
+                    </div>
+                    <div class="form-group">
+                        <legend>Complete the form below:</legend>
+                            <label for="firstName">First name</label>
+                            <input type="text" id="firstName" name="firstName" minlength="1" placeholder="John">
+                            <label for="lastName">Last name</label>
+                            <input type="text" id="lastName" name="lastName" minlength="1" placeholder="Doe">
+                        
+                        
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                            <label for="phone">Phone number</label>
+                            <input type="tel" id="phone" name="phone">
+                        
+                        
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password">
+                            <label for="passwordConfirmation">Confirm password</label>
+                            <input type="password" id="passwordConfirmation" name="passwordConfirmation">
+                        
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="btn-create-acct">Create account</button>
+                    </div>
+                </form>
+                <div class="question">
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </div>
+        </div>
+        
     </div>
-    <div class="header">
-        <h3 class="header-h3">
-            Are you interested in our cat sitting services?<br>
-            Sign up now to get started.<br>
-        </h3>
-    </div>
-    <form action="#" method="get" id="form">
-        <div class="errors">
-            <h3 class="error-title">Error</h3>
-            <ul class="errors-list">
-
-            </ul>
-        </div>
-        <div class="form-group">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" placeholder="Your first name">
-        </div>
-        <div class="form-group">
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Your last name">
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your email address">
-        </div>
-        <div class="form-group">
-            <label for="phone-number">Phone number:</label>
-            <input type="tel" id="phone-number" name="phone-number" placeholder="Your phone number">
-        </div>
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="8 characters minimum">
-        </div>
-        <div class="form-group">
-            <label for="password-confirmation">Confirm password:</label>
-            <input type="password" id="password-confirmation" name="password-confirmation" placeholder="Passwords must match">
-        </div>
-        <div class="nav-signup">
-            <button class="btn-account" type="submit">Create Account</button><br>
-            <span class="txt-account">Already have an account? <a href="#">Log in</a></span>
-        </div>
-    </form>
 </body>
 </html>
