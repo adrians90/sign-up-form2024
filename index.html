@@ -15,48 +15,48 @@
             </div>
         </div>
         <div class="row-2">
+            <div class="errors">
+                <h3 class="error-title">Error</h3>
+                <ul class="errors-list">
+                    
+                </ul>
+            </div>
             <div class="description">
-                <span>Get in touch for our cat sitting services!</span><br>
-                <span>Sign up now to get started.</span>
-            </div><br>
-            <div class="form">
-                <form action="#" id="form-element">
-                    <div class="errors">
-                        <h3 class="error-title">Error</h3>
-                        <ul class="errors-list">
-                            
-                        </ul>
+                <span>This is not a real online service! You know you need something</span><br>
+                <span>like this in your life to help you realize your deepest dreams.</span><br>
+                <span>Sign up <em>now</em> to get started</span><br>
+                <br>
+                <span>You know you want to!</span><br>
+            </div>
+            <form action="#" method="get" id="form-element">
+                <fieldset class="contact-field">
+                    <legend>Contact details</legend>
+                    <div class="contact-line-1">
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" name="firstName" minlength="1" placeholder="*">
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" name="lastName" minlength="1" placeholder="*">            
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="*">
                     </div>
-                    <div class="form-group">
-                        <legend>Complete the form below:</legend>
-                            <label for="firstName">First name</label>
-                            <input type="text" id="firstName" name="firstName" minlength="1" placeholder="John">
-                            <label for="lastName">Last name</label>
-                            <input type="text" id="lastName" name="lastName" minlength="1" placeholder="Doe">
-                        
-                        
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
-                            <label for="phone">Phone number</label>
-                            <input type="tel" id="phone" name="phone">
-                        
-                        
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password">
-                            <label for="passwordConfirmation">Confirm password</label>
-                            <input type="password" id="passwordConfirmation" name="passwordConfirmation">
-                        
+                    <div class="contact-line-2">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone">              
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                    <label for="passwordConfirmation">Confirm password</label>
+                    <input type="password" id="passwordConfirmation" name="passwordConfirmation">
                     </div>
+                </fieldset>
+                <fieldset class="acct-field">
                     <div class="button">
                         <button type="submit" class="btn-create-acct">Create account</button>
                     </div>
-                </form>
-                <div class="question">
-                    <p>Already have an account? <a href="#">Log in</a></p>
-                </div>
-            </div>
-        </div>
+                    <div class="question">
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </div>
+                </fieldset>
+            </form>
         
-    </div>
 </body>
 </html>
